@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Psseudo-Elementos</title>
+    <style>
+        body {
+            font-size: normal;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to left, pink, lightblue);
+
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a:visited {
+            color: purple;
+
+        }
+
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        a:active{
+            color: orange;
+        }
+
+        .imp::before{
+            content: "⇥";
+        }
+        .imp::after{
+            content: "⇤";
+        }
+
+        .imp{
+            background-color: turquoise;
+            padding: 5px;
+            border-radius: 10px;
+            width: fit-content;
+            background-image: linear-gradient(to right, yellow, green);
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>>Personalize seus Links com Pseudo-Elementos</h1>
+    <li><a href="https://github.com/HenriqueLA2/ProjetosCriados" target="_blank">Repositório GitHub</a></li>
+    <li class="imp"><a href="https://www.linkedin.com/feed/" target="_blank">Perfil LinkedIn</a></li>
+    <li><a href="https://www.youtube.com/@Top8Games" target="_blank">Canal YouTube</a></li>
+</body>
+</html>

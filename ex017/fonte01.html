@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em C</title>
+    <style>
+        body {
+            font-family: 'Work Sans'Arial, sans-serif;
+            /*
+            Medidas Absolutas:
+            px - pixels
+            pt - pontos
+            cm - centímetros
+            in - polegadas
+            mm - milímetros
+            pc - paicas
+
+            Medidas Relativas:
+            em - em (relativo ao tamanho da fonte do elemento pai)
+            rem - root em (relativo ao tamanho da fonte do elemento raiz)
+            % - porcentagem (relativo ao tamanho da fonte do elemento pai)
+            vw - viewport width (1% da largura da janela de visualização)
+            vh - viewport height (1% da altura da janela de visualização)
+
+            16px = 12pt = 2.54cm = 1in = 25.4mm = 1.333pc
+            1em = 16px (padrão do navegador)
+            1rem = 16px (padrão do navegador)
+            100% = 16px (padrão do navegador)
+            100vw = largura total da janela de visualização
+            100vh = altura total da janela de visualização
+            
+            Use px ou em
+
+            */
+            font-size: 1em; /* Tamanho da fonte */
+            font-weight: normal; /* Peso da fonte */
+            font-style: normal; /* Estilo da fonte */
+            line-height: 1.5; /* Altura da linha */ 
+
+            /* shorthand font
+
+            font: [font-style] [font-weight] [font-size]/[line-height] [font-family];
+            
+            font: normal 1em 'Work Sans', Arial, sans-serif;
+
+            lighter, normal, bold, bolder */
+
+        } 
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, nemo eligendi provident magni nisi, perferendis officiis totam placeat libero consectetur mollitia exercitationem suscipit ex? Alias magni officia cum rem incidunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique necessitatibus porro impedit quasi facilis quas error possimus rerum tenetur, facere dolorem dicta voluptates distinctio ab neque dolor doloribus doloremque numquam.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+</body>
+</html>

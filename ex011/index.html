@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Essa imagem vai mudar dependendo do tamanho da tela, teste mudando o tamanho de seu navegador ou em diferentes dispositivos.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/M.png" type="image/png">
+        <img src="imagens/G.png" alt="Exemplo de imagem">
+    </picture>
+        
+        <h1>Áudio em HTML</h1>
+        <p>Exemplo de áudio incorporado em HTML:</p>
+        <audio preload ="metadata" controls>
+            <source src="midia/calming-bedroom-pop-music-no-copyright-456713.mp3" type="audio/mpeg">
+            <source src="midia/calming-bedroom-pop-music-no-copyright-456713.ogg" type="audio/ogg">
+            <source src="midia/calming-bedroom-pop-music-no-copyright-456713.wav" type="audio/wav">
+        </audio>
+
+        <p>Seu navegador não suporta o elemento de áudio. <a href="https://youtu.be/4OZYsFl-J9s?si=wT2eft2gZDphUGCe"></a>Clique aqui para ir ao audio</p>
+
+    
+    
+</body>
+</html>

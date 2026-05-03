@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        /*Tags de agrupamento são elementos que agrupam outros elementos, como <div>, <span>, <p>, etc. */
+
+            body{
+                background-color: bisque;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color: lightcoral;
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 10px;
+                box-shadow: 10px 6px 12px rgba(128, 128, 128, 0.5);
+            }
+            header > nav > ul > li > a{
+                color: white;
+                text-decoration: none;
+                margin-right: 15px;
+            }
+            header > nav > ul > li > a:hover{
+                text-decoration: underline;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            main{
+                margin-top: 20px;
+            }
+            section{
+                background-color: lightblue;
+                padding: 15px;
+                border: 2px solid black;
+                border-radius: 10px;
+                box-shadow: 10px 6px 12px grey;
+            }
+            footer{
+                box-shadow: 10px 6px 12px rgba(128, 128, 128, 0.527);
+                background-color: lightgrey;
+                text-align: center;
+                padding: 0px;
+                margin-top: 20px;
+                border-radius: 10px;
+                font-size: 10px;
+
+
+            }
+            .resultado{
+                font-weight: bold;
+                border: 2px dotted rgb(0, 0, 0);
+                padding: 5px;
+                background-color: lightgreen;
+                border-radius: 10px;
+            }
+            
+            #img1{
+                display: none;
+            }
+            .resultado:hover > #img1{
+                display: block;
+            }
+            #referencias{
+                background-color: rgba(43, 175, 3, 0.527);
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.479);
+
+            }
+            h2{
+                text-decoration: underline;
+                display: inline;
+                background-color: lightyellow;
+                border-radius: 4px 0px;
+                border: 2px solid black;
+
+            }
+            #bola{
+                width: 100px;
+                height: 100px;
+                background-color: white;
+                border-radius: 50%;
+                border: 4px;
+            }
+    </style>    
+</head>
+<body>
+    <header>
+        <h1>Grouping Tags Example</h1>
+        <nav id = 'referencias'>
+            <p style="background-color: aliceblue; font-weight: bold; font-size: 12px; display: inline-block; margin: auto; padding: 5px; border: 2px solid black; border-radius: 10px;">Referências</p>
+            <ul id="links" style="list-style-type: none; padding: 5px; margin: auto; background-color: black;border-radius: 10px;">
+                
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Noticias de Esportes</h2>
+             <h3>Esta seção contém notícias sobre esportes.</h3>
+              <article id="noticia1">
+                <h4>Fluminense Vence Grêmio em pleno Maracanã, com jogo pegado!</h4>
+                <p>Fluminense venceu o Grêmio por 2 a 1 no Maracanã, em um jogo emocionante e disputado, com gols de Lucho e Nonato pelo tricolor, e Carlos Vinicius pelo time adversário.</p>
+                <p>Nonato abriu o placar no inicio do segundo tempo. Lucho garantiu a vitória do Fluminense com um gol no segundo tempo, e carlos vinicíus marca no final da segunda etapa, em uma partida marcada por muita emoção e lances polêmicos.</p>
+                <p class="resultado" id="flu">Resultado: Fluminense 2 x 1 Grêmio
+                    <img id="img1" src="img/55062242064-8c7078245d-o.webp" alt="  Foto do jogo Fluminense x Grêmio" width="400px">
+                </p>
+                
+              </article>
+            
+        </section>
+        <footer>
+            <p>&copy; 2024 Notícias de Esportes. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+    <div id="bola"></div>
+    
+</body>
+</html>

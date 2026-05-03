@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Em HTML é ID = Em CSS é # 
+    Em HTML é CLASS = Em CSS é .  */
+/*CLASS é usado para agrupar elementos que terão a mesma formatação.    
+  ID é usado para identificar um elemento único na página.  Só pode haver um ID por página/item. */
+body{
+    background-color: rgb(194, 248, 248);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: blue;
+}
+h2{
+    color: rgb(13, 93, 99);
+}
+p{
+    color: green;
+}
+#coisas{
+    color: rgb(143, 22, 190);
+    text-align: center;
+}
+.basico{
+    color: palevioletred;
+    font-weight: lighter;
+}
+.intermediario{
+    color: purple;
+    font-weight: bold;
+}
+.avancado{
+    color: orange;
+    font-weight: bolder;
+}
+.parte{
+    background-color: tomato;
+}

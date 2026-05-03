@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com Caixas</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #e06e6e, #9595db, rgba(130, 230, 130, 0.575));
+        }
+        h1{
+            background-color: aliceblue;
+
+            /*Apesar de h1 ser block-level, ele pode ser um inline-level, somente usando display:inline-block, e vice-versa*/
+            
+            /*tamanho da box*/
+            height: 300px;
+            width: 300px;
+            border: 5px solid black;
+
+            /*padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            */
+            padding: 10px 10px 10px 10px; /*top right bottom left, shorhand para encurtar o comando, se toda a medida for igual de todos os lados, somente uma medida é necessária*/
+
+            margin: 20px 50px 70px 100px; /*top right bottom left, usar auto para centralizar*/
+
+            /*outline-width: 20px;
+            outline-style: dotted;
+            outline-color: red;
+            */
+            outline: 10px dashed rgb(0, 0, 0); /*shorthand para encurtar o comando*/
+
+        }
+
+        a{
+            background-color: steelblue;
+            border: black dashed 3px;
+
+        }
+        /*p{
+            background-color: lightgray;
+            border: 3px solid green;
+        }*/ /*removido para teste de herança*/
+
+    </style>
+</head>
+<body>
+    <h1>Teste com Caixas</h1>
+    <P>Este é um parágrafo de teste em box level.</P>
+    <p>Este é outro parágrafo de teste em que <a href="#">Links são inline-level</a> como funciona </p>
+</body>
+</html>
