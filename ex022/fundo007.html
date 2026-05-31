@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical</title>
+    <style>
+
+        #secao {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px; 
+            background-color: yellow;  
+        }
+        #artigo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            background-color: purple;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%); /* O translate é usado para ajustar a posição do elemento, movendo-o para cima e para a esquerda em 50% de sua própria largura e altura, respectivamente. Isso garante que o centro do elemento fique alinhado com o ponto central da seção. Sem o translate, o canto superior esquerdo do elemento estaria alinhado com o ponto central da seção, o que não é o resultado desejado para a centralização vertical e horizontal. O translate é essencial para garantir que o elemento seja centralizado corretamente em relação à seção. */
+
+
+         
+        }
+        </style>
+
+</head>
+<body>
+    <section id="secao">
+        <article id="artigo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
