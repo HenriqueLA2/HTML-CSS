@@ -1,0 +1,74 @@
+/* ---import--- */        
+       
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&family=Mozilla+Headline:wght@200..700&family=Noto+Sans+Syriac:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --cor-fundo: #000000;
+            --cor-texto: #FFFFFF;
+            --titulo: 'Bebas Neue', 'cursive', sans-serif;
+            --cordel: 'Mozilla Headline', 'cursive', sans-serif;
+        }
+        
+       
+        #titulo {
+            font-family: var(--titulo);
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            padding: 20px;
+            text-align: center;
+            margin: -8px -8px;
+            height: 150px;
+        }
+        #titulocordel {
+            text-align: center;
+            font-family: var(--cordel);
+            font-size: 80px;
+            margin: 0;
+        }
+
+        .verso > p {
+            padding: 20px;
+            font-size: 40px;
+            margin: 20px;
+            line-height: 70px;
+            
+        }
+
+        #img1 {
+            background-image: url('imagens/background001.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+
+        }   
+        .imagem {
+            padding: 20px;
+            font-size: 40px;
+            margin: -8px;
+            line-height: 70px;
+            color: #FFFFFF; 
+                                                                        
+        }
+        #img2 {
+            background-image: url('imagens/background002.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .imagem > p {
+            box-shadow: inset 200px 200px 200px 200px rgba(0, 0, 0, 0.336);
+            display: inline-block;
+            padding: 20px
+        }
+        footer {
+            background-color: #000000;
+            color: #FFFFFF;
+            text-align: center;
+            margin: -8px;  
+            
+        }
+
