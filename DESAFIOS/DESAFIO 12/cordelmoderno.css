@@ -5,10 +5,21 @@
         :root {
             --cor-fundo: #000000;
             --cor-texto: #FFFFFF;
+            --cor-link: #00e1ff;
             --titulo: 'Bebas Neue', 'cursive', sans-serif;
             --cordel: 'Mozilla Headline', 'cursive', sans-serif;
         }
         
+        a{
+            color: var(--cor-texto);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--cor-link);
+            text-decoration: underline;
+            
+        }
        
         #titulo {
             font-family: var(--titulo);
@@ -17,13 +28,22 @@
             padding: 20px;
             text-align: center;
             margin: -8px -8px;
-            height: 150px;
+            min-height: 110px;
         }
         #titulocordel {
             text-align: center;
             font-family: var(--cordel);
             font-size: 80px;
             margin: 0;
+        }
+
+        #autor {
+            text-align: center;
+            font-family: var(--cordel);
+            font-size: 30px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
         }
 
         .verso > p {
@@ -69,6 +89,7 @@
             color: #FFFFFF;
             text-align: center;
             margin: -8px;  
+            margin-bottom: -80px;
             
         }
 
