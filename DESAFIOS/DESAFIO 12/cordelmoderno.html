@@ -14,6 +14,12 @@
         <p id="autor"><a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Por: Milton Duarte</a></p>
     </header>
 
+    <div id="botoes">
+        <button id="+a" >Aumentar fonte</button>
+        <button id="-a" >Diminuir fonte</button>
+
+    </div>
+
     <div class="verso" >
     
         <p>
@@ -141,5 +147,35 @@
     <footer>
         <p>&copy; 2023 Cordel Moderno. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        const aumentarfonte = document.getElementById('+a');
+        const diminuirfonte = document.getElementById('-a');
+        const lista = document.querySelectorAll('.verso p, .imagem p');
+        
+        window.alert('Creditos desse projeto: Professor Guanabara ')
+
+        aumentarfonte.addEventListener('click', function() {
+            lista.forEach(function(elemento) {
+                const estiloAtual = window.getComputedStyle(elemento);
+                const tamanhoAtual = estiloAtual.fontSize; // isso devolve algo tipo "16px" (texto, não número)
+                const numero = parseFloat(tamanhoAtual); // vira 16 (número puro, sem "px")
+                elemento.style.fontSize = numero * 1.2 + 'px';
+                
+            });
+        
+        });
+
+        diminuirfonte.addEventListener('click', function() {
+            lista.forEach(function(elemento) {
+                const estiloAtual = window.getComputedStyle(elemento);
+                const tamanhoAtual = estiloAtual.fontSize; // isso devolve algo tipo "16px" (texto, não número)
+                const numero = parseFloat(tamanhoAtual); // vira 16 (número puro, sem "px")
+                elemento.style.fontSize = numero / 1.2 + 'px';
+            });
+        });
+        
+
+
+    </script>
 </body>
 </html>
