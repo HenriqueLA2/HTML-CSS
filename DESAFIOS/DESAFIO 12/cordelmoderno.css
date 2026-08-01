@@ -29,11 +29,12 @@
             text-align: center;
             margin: -8px -8px;
             min-height: 110px;
+            
         }
         #titulocordel {
             text-align: center;
             font-family: var(--cordel);
-            font-size: 80px;
+            font-size: 10vw;
             margin: 0;
         }
 
