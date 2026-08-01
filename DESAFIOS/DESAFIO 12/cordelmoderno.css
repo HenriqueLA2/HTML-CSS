@@ -58,7 +58,7 @@
         #img1 {
             background-image: url('imagens/background001.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: right center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             
@@ -75,13 +75,13 @@
         #img2 {
             background-image: url('imagens/background002.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: right center;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
 
         .imagem > p {
-            box-shadow: inset 200px 200px 200px 200px rgba(0, 0, 0, 0.336);
+            background-color: rgba(0, 0, 0, 0.5);
             display: inline-block;
             padding: 20px
         }
